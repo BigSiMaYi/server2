@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Key="win_queal" Value="8.0" />
+	<Data Key="dragon" Value="0.5" />
+	<Data Key="tiger" Value="0.5" />
+	<Data Key="win_dragon" Value="1.0" />
+	<Data Key="win_tiger" Value="1.0" />
+	<Data Key="lose_dragon" Value="1.0" />
+	<Data Key="lose_tiger" Value="1.0" />
+</Root>

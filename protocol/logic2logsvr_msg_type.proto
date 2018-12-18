@@ -1,0 +1,118 @@
+syntax = "proto2";
+//import "msgtype.proto";
+package logic2logsvr;
+//@用户标签;
+message PlayerFlags {
+    optional int32 Flags= 1;   //@X 标签;
+    optional float WinP =2;
+    optional bool  FlagsS =3;
+    optional float opCoeff =4;
+    optional int64 flagsMoneyLit =5;
+    optional int64 CurMoneyGet =6;
+    optional int32 GmOpFlags = 7;
+    optional int64 SendCoinCnt =8;
+    optional int64 RecvCoinCnt =9;
+    optional int64 RechargeCnt =10;
+    optional int64 WithDrawCnt =11;
+    optional int32 FlagsY =12;
+    optional int64 FlagsX =13;
+    optional int64 SafeBag = 14;
+};
+//@用户操作序列;
+message OptInfo {
+   optional int32  VarGold = 1; //@金币变化;
+   optional int32  Opt =2;     //@对应用户操作;
+   optional bytes  CardOut =3;   //@玩家出牌序列;
+   optional int32  CurGameStage =4; //@当前游戏阶段;
+};
+
+//@扎金花游戏用户信息;
+message PlayerInfoZJH {
+   optional int32 PID = 1;
+   optional int32 GoldBegin =2;
+   optional int32 GoldEnd = 3;
+   optional int32 Commission = 4; //@游戏抽水;
+   optional bytes CardHand =5; //@用户手牌;
+   repeated OptInfo OptArray =6;  //@操作序列;
+   optional int32 SeatID = 7 ;   //@用户座位号;
+   optional PlayerFlags PFlags =8; //@玩家标签;
+   optional bool IsRobot =9;	  //@是否机器人;
+   optional int32 VarGold = 10;  //@这局金币变化;
+   optional int64 BeginTime = 11; //@玩家进入时间;
+   optional int64 EndTime  = 12;  //@玩家离桌时间;
+   optional int64 VarTime = 13 ;  //@此玩家游戏时常;
+};
+
+//@游戏详细信息;
+message GameInfo {
+    optional int32 GameID = 1;
+    optional int32 RoomID = 2;
+    optional int32 TableID = 3;
+    optional int32 SeatID =4 ; //@椅子号;
+};
+
+//@诈金花游戏信息;
+message ZJHGameLog {
+     optional string  GameRoundIndex = 1;  //@游戏对局ID,24位UUID;
+     repeated PlayerInfoZJH  PInfo  =2;    //@玩家信息;
+     optional GameInfo GInfo = 3;    //@游戏详情; 
+     optional int64  BeginTime =4;    //@游戏开始时间;
+     optional int64  EndTime  =5;  //@游戏结束时间;
+     optional int64  VarTime = 6;  //@时间差;
+};
+
+//@捕鱼开炮扣钱结构;
+message FishBulletInfo {
+    optional int32 BulletID = 1;
+    optional int32 BulletType =2;
+    optional int32 BulletRate =3;
+    optional double BulletLeftTime =4; 
+    optional int32  BulletHitCnt = 5;
+    optional int64  FireTime = 6;  //@发炮时间;		
+}
+
+
+//@开炮信息;
+message FishFireInfo {
+     optional int64 GoldFireBefore = 1;
+     optional int64 GoldFireAfter =2;
+     optional FishBulletInfo FBullettInfo =3;
+     optional int32  Commission =4;
+}
+//@击中信息;
+message FishHitInfo {
+   optional int32  TurretPowerType =1; //@炮台buffer类型;
+   optional int32  FishID =2;     //@命中的鱼的ID,单次命中;
+   optional int32  IsHited =3;	  //@是否击中;
+   optional int32  FishProb =4;   //@鱼的概率;
+   optional int32  NatureProb =5; //@自然概率;
+   repeated int32  DeadFishID = 6; //@死鱼集合;
+   optional int64 DeadFishMoney =7;  //@这次鱼掉落金币; 
+   optional FishBulletInfo FishHitBInfo =8; //@击中鱼的子弹信息;
+   optional int64  HitTime =9 ;  //@击中时间;
+   optional int32  LockFishID =10;  //@是否锁定;
+   optional int32  TurretRate =11; //@炮台倍率;
+   optional int32  FishIDIndex =12; //@屏幕鱼编号?;
+}
+
+//@捕鱼游戏用户信息;
+message PlayerInfoFish {
+   optional int32 PID = 1;
+   optional int64  GoldBegin =2;
+   optional int64  GoldEnd  =3;
+   optional PlayerFlags PFlags = 4;   //@用户标签;
+   optional int32  LuckValue =5;    //@玩家幸运值;
+   optional bool   IsRobot = 6;    //@是否机器人;
+}
+
+//@捕鱼游戏信息;
+message FishGameLog {
+ optional string GameRoundIndex = 1;
+ optional PlayerInfoFish PInfo =2 ; //@当前用户50次射击信息；
+ optional GameInfo  GInfo =3 ;
+ repeated FishFireInfo FireInfo =4;
+ repeated FishHitInfo  HitInfo =5;
+ optional int64 BeginTime =6;
+ optional int64 EndTime =7;
+ optional int64 VarTime= 8;
+}

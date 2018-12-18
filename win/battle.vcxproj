@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F3E91D65-9BB2-4EE6-BAF1-34C42B009DDB}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>battle</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v110</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <TargetName>$(ProjectName)-gd</TargetName>
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\bin\$(Configuration)\</OutDir>
+    <IncludePath>C:\Program Files (x86)\Visual Leak Detector\include;$(IncludePath)</IncludePath>
+    <LibraryPath>C:\Program Files (x86)\Visual Leak Detector\lib\Win64;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <IntDir>$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <OutDir>$(SolutionDir)..\..\..\bin\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\battle;..\..\share\dependencies\boost;..\..\share\common;..\sshare;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <DisableSpecificWarnings>4996</DisableSpecificWarnings>
+      <AdditionalOptions>-Zm200 %(AdditionalOptions)</AdditionalOptions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\battle;..\..\share\dependencies\boost;..\..\share\common;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="../battle/stdafx.h" />
+    <ClInclude Include="../battle/targetver.h" />
+    <ClInclude Include="..\..\share\common\battle\ai_group_base.h" />
+    <ClInclude Include="..\..\share\common\battle\ai_object_base.h" />
+    <ClInclude Include="..\..\share\common\battle\ai_group_melee.h" />
+    <ClInclude Include="..\..\share\common\battle\ai_group_range.h" />
+    <ClInclude Include="..\..\share\common\battle\ai_helper.h" />
+    <ClInclude Include="..\..\share\common\battle\ai_object_melee.h" />
+    <ClInclude Include="..\..\share\common\battle\ai_mgr.h" />
+    <ClInclude Include="..\..\share\common\battle\ai_object_range.h" />
+    <ClInclude Include="..\..\share\common\battle\attribute_helper.h" />
+    <ClInclude Include="..\..\share\common\battle\attribute_mgr.h" />
+    <ClInclude Include="..\..\share\common\battle\battle_def.h" />
+    <ClInclude Include="..\..\share\common\battle\grid_pos.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_1.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_10.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_11.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_12.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_2.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_3.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_4.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_5.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_6.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_7.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_8.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_9.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_base.h" />
+    <ClInclude Include="..\..\share\common\battle\impact_mgr.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_base.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_core.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_formation.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_group.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_handler.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_player.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_pos.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_scene.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_skill.h" />
+    <ClInclude Include="..\..\share\common\battle\melee_attacker_info.h" />
+    <ClInclude Include="..\sshare\AIParamCFG.h" />
+    <ClInclude Include="..\sshare\BattleCFG.h" />
+    <ClInclude Include="..\sshare\HeroCFG.h" />
+    <ClInclude Include="..\sshare\ImpactCFG.h" />
+    <ClInclude Include="..\sshare\ModelCFG.h" />
+    <ClInclude Include="..\sshare\RestrainCFG.h" />
+    <ClInclude Include="..\sshare\SkillCFG.h" />
+    <ClInclude Include="..\sshare\SoldierCFG.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../battle/stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_group_base.cpp" />
+    <ClCompile Include="..\..\share\common\battle\ai_object_base.cpp" />
+    <ClCompile Include="..\..\share\common\battle\ai_group_melee.cpp" />
+    <ClCompile Include="..\..\share\common\battle\ai_group_range.cpp" />
+    <ClCompile Include="..\..\share\common\battle\ai_helper.cpp" />
+    <ClCompile Include="..\..\share\common\battle\ai_object_melee.cpp" />
+    <ClCompile Include="..\..\share\common\battle\ai_mgr.cpp" />
+    <ClCompile Include="..\..\share\common\battle\ai_object_range.cpp" />
+    <ClCompile Include="..\..\share\common\battle\attribute_helper.cpp" />
+    <ClCompile Include="..\..\share\common\battle\attribute_mgr.cpp" />
+    <ClCompile Include="..\..\share\common\battle\grid_pos.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_1.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_10.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_11.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_12.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_2.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_3.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_4.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_5.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_6.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_7.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_8.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_9.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_base.cpp" />
+    <ClCompile Include="..\..\share\common\battle\impact_mgr.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_base.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_base_impact.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_core.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_core_calc.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_formation.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_group.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_handler.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_player.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_pos.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_scene.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_skill.cpp" />
+    <ClCompile Include="..\..\share\common\battle\melee_attacker_info.cpp" />
+    <ClCompile Include="..\sshare\AIParamCFG.cpp" />
+    <ClCompile Include="..\sshare\BattleCFG.cpp" />
+    <ClCompile Include="..\sshare\HeroCFG.cpp" />
+    <ClCompile Include="..\sshare\ImpactCFG.cpp" />
+    <ClCompile Include="..\sshare\ModelCFG.cpp" />
+    <ClCompile Include="..\sshare\RestrainCFG.cpp" />
+    <ClCompile Include="..\sshare\SkillCFG.cpp" />
+    <ClCompile Include="..\sshare\SoldierCFG.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\share\common\battle\logic_pos.inl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

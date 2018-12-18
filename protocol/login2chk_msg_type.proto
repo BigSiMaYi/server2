@@ -1,0 +1,142 @@
+syntax = "proto2";
+package login2chk;
+
+//心跳包
+message C2LHeartBeat {
+	optional int32 packet_id = 1 [default = 8];
+}
+
+//心跳包回包
+message L2CHeartBeatRet {
+	optional int32 packet_id = 1 [default = 9];
+}
+//@普通用户登录，非第三方渠道
+message UserLogin {
+    optional int32  packet_id =1 [default = 1003];
+    optional string acc = 2;	     
+    optional string pwd = 3;
+    optional  int32 channelID = 4;
+    required string deviceNum = 5;
+    optional  int32  platfrom = 6; //@平台标识,ios ,android,pc ,android =0, ios =1 ,pc =2;
+    optional  int32  referral = 7;  //@推荐人ID;
+    optional  int32  loginType =8;  //@0是游戏账号,1是账号登录;
+    optional  string  thirdEx = 9;  //@用户第三方登录扩展信息;
+}
+//@房间列表类型;
+//@如果有相同的多组服务器，则下发给用户的只有一组最合适的服务列表;
+//@根据一个挑拣算法给出;
+message RoomInfo {
+    optional int32  gameGenre =1;  //@游戏大类,比如休闲，对战，小游戏等
+    required int32  gameType =2;   //@对平台内所有种类游戏统一编号 比如捕鱼 1号，牛牛2号，。。。
+    optional string roomAddr =3;   //@
+    optional int32  roomType  =4;  //@ 0.常规游戏，1.比赛类型，2.约战类型;
+    optional int32  roomID =5;     //@对应所在游戏对应的房间;
+    optional int32  onlineCnt =6;  //@当前在线用户;
+    required string gateAddr =7;   //@192.168.11.124:12345;
+    optional int32  svrLevel= 8;   //@world index;
+    optional int32  gameVer =9;	   //@游戏版本号;
+}
+
+//@用户登录返回消息;
+message UserLoginRet  {
+	optional int32 	 	packet_id =1 [default = 1004];
+	optional int32	    result =2;
+	optional string 	acc =3;	
+	optional string  	token =4;
+	required bool   	isrelogin =5;
+	repeated RoomInfo 	content =6;   		//@存放游戏列表; 
+	optional bytes 		original = 7; 		//@存放扩展信息,客户端一般用不到;
+	optional string		regionArea = 8;		//@地区;
+	optional bool		isTourist = 9;		//@是否游客;
+	optional string		phoneNum = 10;		//@手机号码;
+	optional string  	alipayAcc = 11;		//@支付宝账号;
+	optional string   	realName =12;
+	optional int64 		bindingReward=13;       //@绑定账号送钱数量;
+	optional string     defaultGate =14;	//@该此登录gate信息;
+	optional string     errorMsg =15;		//@错误信息;
+	
+}
+
+//@请求验证码;
+message RequestSMSCode {
+	optional  int32 packet_id =1 [default = 1007];
+	required  string acc = 2;
+	required  string phoneNum = 3;
+	optional  int32  smsType  =4 ;  //@sms用途;	
+}
+
+//@web返回,带个sms code回来;
+message Req2WebSMSRet {
+	required  int32 reqSMSCode =1;
+	required bytes info = 2;  //@存放过来的RequestSMSCode struct
+}
+//@手机绑定;
+message UserPhoneBinding {
+	optional  int32  packet_id = 1 [default = 1009];
+	required  string acc =2;
+	optional  string pwd =3;
+	required  string deviceNum = 4;
+	optional  string phoneNum =5;
+	required  int32	 smsCode =6;
+}
+
+//@绑定支付宝;
+message UserAliPayBinding {
+	optional  int32 packet_id = 1 [default = 1011];
+	required  string acc = 2;
+	optional  string alipayAcc =3;
+ 	optional  string realName  =4;
+}
+
+//@找回密码;
+message RetrievePwd {
+	optional  int32 packet_id = 1 [default = 1013];
+	required  string acc =2;
+	required  string phoneNum =3;
+	required  int32  smsNum =4;
+	required  string newPwd =5;
+}
+
+//@手机绑定于支付宝绑定返回;
+message BindingRet {
+	optional int32 packet_id = 1 [default = 1012];
+	optional int32 result = 2;
+	optional int32 optype =3;  //@ 
+	required int32 errorNum =4;
+}
+
+//@手机绑定check向loginsvr回报;
+message Ch2LBindingRet{
+	required  bytes upbInfo= 1; //@UserPhoneBinding 存放;
+	required  bytes brInfo =2; //@BindingRet  存放;
+}
+
+//@请求单次token;
+message ReqWorldToken {
+	optional  int32 packet_id = 1 [default = 1019];
+	optional  string acc = 2;
+}
+
+//@请求单次token;
+message ReqWorldTokenRet {
+	optional  int32 packet_id = 1 [default = 1020];
+	optional  string acc = 2;
+	optional  string token =3;
+}
+
+//@请求order token
+message RequestChargeOrder {
+	optional int32 packet_id = 1 [default = 1018];
+	required string acc  =2 ;	//@账号;
+	optional int32  channelID = 3;   //@渠道号;
+}
+
+//@充值成功推送;
+message ChargeRet {
+
+}
+//@重置成功确认;
+message CheckChargeRet{
+
+}
+

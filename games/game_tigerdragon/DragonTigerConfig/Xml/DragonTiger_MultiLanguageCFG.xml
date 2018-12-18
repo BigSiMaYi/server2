@@ -1,0 +1,44 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data ID="Room_NeedVipLevel" Name="需要VIP%d解锁" />
+	<Data ID="Room_RateLimit" Name="最大下注：%s" />
+	<Data ID="Main_Prepare" Name="正在准备开始下一局……" />
+	<Data ID="Main_Prepare_Banker" Name="正在准备开始下一局……，本局你是庄家。" />
+	<Data ID="Main_Prepare_Leave" Name="正在准备开始下一局……，本局你已经下庄。" />
+	<Data ID="Main_StartBet" Name="开始下注。" />
+	<Data ID="Main_Win" Name="胜" />
+	<Data ID="Main_Lose" Name="败" />
+	<Data ID="Apply_Banker" Name="申请上庄需要%s金币！\n~充值能获得充足的金币哦！" />
+	<Data ID="Tips_NotEnoughGold" Name="金币不足，不能下注。" />
+	<Data ID="Tips_ApplySuccess" Name="申请上庄成功。" />
+	<Data ID="Tips_ApplyFail_Gold" Name="申请上庄失败，金币不足。" />
+	<Data ID="Tips_ApplyFail_IsBanker" Name="申请上庄失败，你已经是庄家。" />
+	<Data ID="Tips_ApplyFail_InBankerList" Name="申请上庄失败，你已经在庄家列表中。" />
+	<Data ID="Tips_ApplyFail_Full" Name="申请上庄失败，申请上庄人数已满。" />
+	<Data ID="Tips_LeaveSuccess" Name="申请下庄成功，本局结束后将下庄。" />
+	<Data ID="Tips_LeaveFail_IsNotBanker" Name="申请下庄失败，你不是庄家。" />
+	<Data ID="Tips_LeaveFail_NotEnoughTicket" Name="申请下庄失败，你没有足够的钻石。" />
+	<Data ID="Tips_LeaveFail_Applied" Name="你已申请下庄，不要重复。" />
+	<Data ID="Tips_ForceLeave" Name="{fontname=Common2/FZY3JW.TTF,fontsize=30,color=0xFF93523D}上庄时间不够，是否强制下庄，强制下庄需要10钻石。" />
+	<Data ID="Tips_CantBet_IsBanker" Name="你是庄家，不能下注。" />
+	<Data ID="Tips_LeaveRoom_IsBanker" Name="你是庄家，不能离开房间。" />
+	<Data ID="Tips_ErrorState" Name="下注失败，错误状态。" />
+	<Data ID="Tips_Bet_Banker_Is_Full" Name="下注失败，庄家下注金额已满。" />
+	<Data ID="Tips_Bet_Other_Is_Full" Name="每轮下注金额不得超过现金的10%" />
+	<Data ID="Total_Bet_Info" Name="总下注：" />
+	<Data ID="Total_Info" Name="总计" />
+	<Data ID="Snatch_Can" Name="可以竞价抢庄。" />
+	<Data ID="Snatch_Is_High" Name="你的竞价最高。" />
+	<Data ID="Snatch_Is_Not_High" Name="你的竞价被超过。\n当前竞价是%d" />
+	<Data ID="Snatch_Is_Cur" Name="当前竞价是%d。" />
+	<Data ID="Snatch_Tips" Name="{fontname=Common2/FZY3JW.TTF,fontsize=30,color=0xFF93523D}      是否花费%d金币竞价抢庄！            {newline,fontsize=24}    (如果无人超过您的出价，下一局即可上庄){newline}    tip:竞价失败不会扣除金币" />
+	<Data ID="Snatch_success" Name="竞价抢庄成功。" />
+	<Data ID="Snatch_Protect" Name="庄家在保护期，不能竞价抢庄。" />
+	<Data ID="Snatch_Is_Self" Name="你的竞价已经是最高。" />
+	<Data ID="Snatch_Is_Low" Name="你的竞价过低。" />
+	<Data ID="Snatch_Is_Banker" Name="你是庄家，不能竞价。" />
+	<Data ID="Snatch_Not_Enough_Ticket" Name="钻石不够，不能竞价。" />
+	<Data ID="Balance_Not_Bet" Name="未投注" />
+	<Data ID="System_Banker_Name" Name="系统小庄" />
+	<Data ID="Tips_Pre_Balance" Name="正在结算，请稍候…" />
+</Root>

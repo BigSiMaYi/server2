@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Key="BetRate" Value="10" />
+	<Data Key="BankerBetRate" Value="5" />
+	<Data Key="PreTime" Value="3" />
+	<Data Key="BetTime" Value="15" />
+	<Data Key="DealTime" Value="23" />
+	<Data Key="ResultTime" Value="6" />
+	<Data Key="MinBankerCount" Value="1" />
+	<Data Key="CostLeaveBanker" Value="5" />
+	<Data Key="ForceLeaveCost" Value="0" />
+	<Data Key="WinStarCount" Value="0" />
+	<Data Key="AwardGetRate" Value="100" />
+	<Data Key="BroadcastGold" Value="2000000" />
+	<Data Key="PlayerBankerCount" Value="10" />
+</Root>

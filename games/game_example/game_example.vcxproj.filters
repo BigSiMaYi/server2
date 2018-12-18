@@ -1,0 +1,107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="game_example.h" />
+    <ClInclude Include="game_db.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db_log.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_engine.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_lobby.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_room.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_table.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_example_logic.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share\protocol\game_example_protocol.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share\protocol\game_example_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_player.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_def.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\sshare\M_VIPProfitCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="game_example.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="game_db.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_db_log.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_engine.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_lobby.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_room.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_table.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_example_logic.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share\protocol\game_example_protocol.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share\protocol\game_example_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_player.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\sshare\M_VIPProfitCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="config">
+      <UniqueIdentifier>{1df5f337-8eea-40c1-9f0f-38f756b4c18c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{80b846fb-ec4d-41ad-af0f-26287135a200}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{141e0a89-03b7-4174-9f5a-f2e4ec6b3a61}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_logic">
+      <UniqueIdentifier>{f1aeddfb-71f5-4121-9c0b-3c133a0f2da2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_mgr">
+      <UniqueIdentifier>{5279dc55-aecb-4f33-934b-18ff29d5e411}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\share\protocol\game_example_protocol.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share\protocol\game_example_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+  </ItemGroup>
+</Project>

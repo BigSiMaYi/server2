@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Key="RobotGold0" Value="300000" />
+	<Data Key="RobotGold1" Value="500000" />
+	<Data Key="RobotGold2" Value="1000000" />
+	<Data Key="RobotGold3" Value="3000000" />
+	<Data Key="RobotGold4" Value="10000000" />
+	<Data Key="RobotBankerCD" Value="900" />
+	<Data Key="RobotBankerMinCount" Value="6" />
+	<Data Key="RobotBankerMaxCount" Value="20" />
+</Root>

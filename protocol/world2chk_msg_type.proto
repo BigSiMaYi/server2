@@ -1,0 +1,102 @@
+
+syntax = "proto2";
+package world2chk;
+
+//@账号检测
+message AccountChk {
+    required  string acc = 1;	     
+    required  int32  platform = 2;
+    required  int32  serverID = 3; //@world编号,用于判断当前用户是是否同时登录两个world;
+    required  int32  playerID = 4;
+    required  bool   isrelogin =5;
+    optional  string token = 6;
+}
+//@账号检测返回;
+message AccChkRet  {
+   optional  string  errMsg = 1;
+   required  string  acc = 2;
+   optional  int32   playerID = 3;   //@checksvr检测账号属性,如果是待激活账号,则分配pid并返回;
+   optional   bool   isrelogin =4;
+   optional  string  userRegion = 5;  //@用户区域;	
+}
+
+//@房间反注册;
+message UnServerInfo{
+   required string  roomAdd =1;	//@用于房间反注册;
+   optional string  gateAddr =2; //@此房间对应的网关信息;
+   optional int32   svrLevel =3; //@服务等级,world编号;
+}
+
+//@add  by Hunter 2017/09/04;
+//@玩家状态改变通知world,用于一些状态操作;
+//@记得与logic2world_protocol.proto 中结构同步;
+//@ packagel2w_p_game_status_change
+message GameUserStatus
+{
+	//optional e_server_msg_type packet_id = 1 [default = e_msg_12w_p_game_status_change];
+	optional int32 		playerid =1;
+	optional int32    	gameid =2;
+	optional int32   	roomid =3;
+	optional int32 		tableid =4;
+	optional int32 		chairid =5;	   
+	optional int32 		userstatus =6;	  //@用户游戏中状态状态;
+	optional string		gateAddr =7;	  //@网关地址;
+	optional int32  	svrLevel= 8;	  //@world编号;
+	optional string     acc =9;		  //@用户账号;,如果中途绑定，需要更新状态;
+}
+
+//@请求机器人pid
+message ReqrobotPID {
+   required bool  isRobot =1; 	 //@是否机器人;
+   optional int32 pid =2 ; 	 //@pid
+   optional int64 needGold =3;
+   optional int32 needVip =4;
+   optional int32 gameID = 5;
+   optional int32 remoteID = 6;
+}
+//@通知用户绑定手机消息给world,在world上加钱，不然有脏写的问题;
+message PubBindingReward {
+   optional string acc=1;  //@pid
+   optional int32 rewardValue =2;  //@奖励金额;
+   optional string accnew =3;   //@绑定的账号;
+}
+
+//@充值通知,recharegeSvr 回调后通知给chksvr;
+message WestRechargeInfo{
+   optional string westID=1; //@在西部的商户号码;
+   optional string orderID=2; //@库里的订单号;
+   optional int32 amount =3;  //@用户充的钱数;
+   optional int32  orderStatus=4; //@订单状态;
+   optional string checkSign =5; //@校验号码;
+   optional string extInfo = 6; //@用户扩展信息;
+}
+
+//@充值成功消息check服务通知world服务,尽量多个渠道能共用;
+message OrderNoChecked {
+   optional string orderID =1; //@待确认充值订单ID,用于第一次充值通知,如果该用户在线,则world回复确认充值已通知成功,
+			       //@如果第一次未找到用户,则用户登录是收到请求充值订单的消息,这时chck直接确认;
+   optional int32 amount =2;  //@已分为单位;
+   optional int32  payID =3; //@商品编号;	
+}
+message PubRechargeRet {
+   optional string acc =1;  //@pid;
+   repeated OrderNoChecked OrderList=2;  //@充值成功但未确认的充值订单,在有新充值的时候只发当前充值单,如果是用户登录时请求的单,则将所有未确认的都下发; 
+}
+
+//@订单确认消息,或者为确认消息,由于有多个world存在所以还是得发确认消息过来;
+message OrderCancleChecked {
+	optional string orderID = 1;
+	optional int32  opType = 2;   //@opType ==1,订单确认消息;
+}
+
+//@接收用户下分订单,返回直接返回一个包头即可;
+message ReqExchangeOrderInsert {
+	optional int32  pid =1;
+	optional string acc =2;	
+	optional int32  channelID =4;
+	optional string deviceNum =5 ;
+	optional int32  deviceType =6;
+	optional int64  exchangeMoney =7; //@下分的钱;
+	optional string aliacc =8 ;   //@支付宝账号;
+}
+

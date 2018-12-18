@@ -1,0 +1,218 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{7beaef86-699b-4104-be05-56045bbaf3f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{b2f9e8d3-8a2e-455e-971b-47c2830a0e4f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_logic">
+      <UniqueIdentifier>{4acc7854-b4f7-4f4e-9ee2-6b8ee03ca29b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{3d68851b-97f5-4523-a561-3a499e2ee723}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_mgr">
+      <UniqueIdentifier>{ee3f0de4-5b4d-4f17-b3e6-3c8f118e495d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_logic\robot">
+      <UniqueIdentifier>{d2ddbe94-76ff-459e-bd4d-4eedc03fcee4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="game_logic\card">
+      <UniqueIdentifier>{dd6ad412-c178-4225-9137-b5518649eae7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="logic_def.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db_log.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="game_engine.h">
+      <Filter>game_mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_lobby.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_player.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_room.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_table.h">
+      <Filter>game_logic</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_mgr.h">
+      <Filter>game_logic\robot</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_packet_manager.h">
+      <Filter>game_logic\robot</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_def.h">
+      <Filter>game_logic\robot</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_player.h">
+      <Filter>game_logic\robot</Filter>
+    </ClInclude>
+    <ClInclude Include="robot_proc_logic.h">
+      <Filter>game_logic\robot</Filter>
+    </ClInclude>
+    <ClInclude Include="GameLogic.h">
+      <Filter>game_logic\card</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_cardmgr.h">
+      <Filter>game_logic\card</Filter>
+    </ClInclude>
+    <ClInclude Include="card_def.h">
+      <Filter>game_logic\card</Filter>
+    </ClInclude>
+    <ClInclude Include="game_robcows.h" />
+    <ClInclude Include="proc_robcows_logic.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_robcows_protocol.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="RobCows_RoomCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="RobCows_BaseInfo.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="RobCows_RobotGameCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="RobCows_RobotCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="RobCows_RobotRoomCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\msg_type_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\robcows_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\robcows_logic.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\robcows_protocol.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\robcows_robot.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\logic2logsvr_msg_type.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="game_db.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_db_log.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="game_engine.cpp">
+      <Filter>game_mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_lobby.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_player.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_room.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_table.cpp">
+      <Filter>game_logic</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_mgr.cpp">
+      <Filter>game_logic\robot</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_player.cpp">
+      <Filter>game_logic\robot</Filter>
+    </ClCompile>
+    <ClCompile Include="robot_proc_logic.cpp">
+      <Filter>game_logic\robot</Filter>
+    </ClCompile>
+    <ClCompile Include="GameLogic.cpp">
+      <Filter>game_logic\card</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_cardmgr.cpp">
+      <Filter>game_logic\card</Filter>
+    </ClCompile>
+    <ClCompile Include="game_robcows.cpp" />
+    <ClCompile Include="proc_robcows_logic.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_robcows_protocol.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="RobCows_RoomCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="RobCows_BaseInfo.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="RobCows_RobotGameCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="RobCows_RobotCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="RobCows_RobotRoomCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\msg_type_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\robcows_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\robcows_logic.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\robcows_protocol.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\robcows_robot.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\logic2logsvr_msg_type.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\share2\protocol\msg_type_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\robcows_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\robcows_logic.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\robcows_protocol.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\robcows_robot.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\logic2logsvr_msg_type.proto">
+      <Filter>protocol</Filter>
+    </None>
+  </ItemGroup>
+</Project>

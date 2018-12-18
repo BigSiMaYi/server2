@@ -1,0 +1,296 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClInclude Include="../battle/stdafx.h" />
+    <ClInclude Include="../battle/targetver.h" />
+    <ClInclude Include="..\..\share\common\battle\logic_core.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\logic_scene.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_base.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\battle_def.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\logic_base.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\logic_player.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_mgr.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\ai_mgr.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\BattleCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\HeroCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\ImpactCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\SkillCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\SoldierCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\logic_handler.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_1.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\attribute_mgr.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\attribute_helper.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\RestrainCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_3.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_2.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_4.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_5.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\logic_formation.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\logic_group.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\logic_pos.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\ModelCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_6.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\sshare\AIParamCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_7.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_8.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_9.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\melee_attacker_info.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\ai_helper.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_10.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_11.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\ai_group_melee.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\ai_group_range.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\ai_object_range.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\ai_object_melee.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\ai_object_base.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\ai_group_base.h">
+      <Filter>ai</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\grid_pos.h">
+      <Filter>core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\logic_skill.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\share\common\battle\impact_12.h">
+      <Filter>skill</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="../battle/stdafx.cpp" />
+    <ClCompile Include="..\..\share\common\battle\logic_core.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_scene.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_base.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_base.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_player.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_mgr.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_mgr.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\BattleCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\HeroCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\ImpactCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\SkillCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\SoldierCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_1.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\attribute_mgr.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_core_calc.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\attribute_helper.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\RestrainCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_3.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_2.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_4.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_5.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_formation.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_group.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_pos.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_base_impact.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\ModelCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_6.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\sshare\AIParamCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_7.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_8.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_9.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_handler.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\melee_attacker_info.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_helper.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_10.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_11.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_group_melee.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_group_range.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_object_range.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_object_melee.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_object_base.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\ai_group_base.cpp">
+      <Filter>ai</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\grid_pos.cpp">
+      <Filter>core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\logic_skill.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\share\common\battle\impact_12.cpp">
+      <Filter>skill</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="skill">
+      <UniqueIdentifier>{2fe3d9fb-ea4d-4e27-b99a-5d834a5097ca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="core">
+      <UniqueIdentifier>{7216872c-b501-4ebf-a6a8-bc98936f877b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ai">
+      <UniqueIdentifier>{f88f7e67-4bea-4fad-8b55-569d6be2ebaa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{0b1617c1-7ed3-4750-a780-c3a3aa70e6ef}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\share\common\battle\logic_pos.inl">
+      <Filter>core</Filter>
+    </None>
+  </ItemGroup>
+</Project>

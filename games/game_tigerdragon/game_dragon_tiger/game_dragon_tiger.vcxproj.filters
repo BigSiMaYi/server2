@@ -1,0 +1,228 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="logic_cards.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_lobby.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_main.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_other.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_player.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_poker_mgr.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_robot.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_room.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_BaseInfo.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_CardsCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_HelpCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_MultiLanguageCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_RobotCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_RoomCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_RoomStockCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_SoundCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_WeightCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_dragon_tiger_logic.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_dragon_tiger_protocol.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="game_dragon_tiger.cpp" />
+    <ClCompile Include="game_db_log.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="game_engine.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="game_db.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="DragonTiger_Cardodds.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share2\protocol\dragon_tiger_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share2\protocol\dragon_tiger_logic.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share2\protocol\dragon_tiger_protocol.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share2\protocol\msg_info_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share2\protocol\msg_info_def_ex.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\share2\protocol\msg_type_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="cards_def.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="logic_cards.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_def.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_lobby.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_main.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_other.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_player.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_poker_mgr.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_robot.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_room.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_BaseInfo.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_CardsCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_HelpCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_MultiLanguageCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_RobotCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_RoomCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_RoomStockCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_SoundCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_WeightCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_dragon_tiger_logic.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_dragon_tiger_protocol.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="game_dragon_tiger.h" />
+    <ClInclude Include="game_db_log.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game_engine.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="DragonTiger_Cardodds.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share2\protocol\dragon_tiger_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share2\protocol\dragon_tiger_logic.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share2\protocol\dragon_tiger_protocol.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share2\protocol\msg_info_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share2\protocol\msg_info_def_ex.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\share2\protocol\msg_type_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\..\share2\protocol\dragon_tiger_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\..\share2\protocol\dragon_tiger_logic.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\..\share2\protocol\dragon_tiger_protocol.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\..\share2\protocol\msg_info_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\..\share2\protocol\msg_info_def_ex.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\..\share2\protocol\msg_type_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{02c64eaf-a12a-441e-9380-f78a0200ff3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{e8f3b082-8566-4564-ae9e-cc45b9ff7e2d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{3dc51f52-8757-4285-a023-e061c045f481}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="config">
+      <UniqueIdentifier>{80363d07-a9c8-44a0-8788-2b4d141f6a3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{e8d4de84-6808-44f9-aa48-6f84d306aec1}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

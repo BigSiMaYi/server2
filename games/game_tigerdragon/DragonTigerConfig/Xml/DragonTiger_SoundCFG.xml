@@ -1,0 +1,45 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data SoundID="1" SoundName="背景音乐" SoundPath="Sound/brnn_bg.mp3" SoundTime="32" />
+	<Data SoundID="2" SoundName="没牛" SoundPath="Sound/sound_brnn_type_00.mp3" SoundTime="2" />
+	<Data SoundID="3" SoundName="牛一" SoundPath="Sound/sound_brnn_type_01.mp3" SoundTime="2" />
+	<Data SoundID="4" SoundName="牛二" SoundPath="Sound/sound_brnn_type_02.mp3" SoundTime="2" />
+	<Data SoundID="5" SoundName="牛三" SoundPath="Sound/sound_brnn_type_03.mp3" SoundTime="2" />
+	<Data SoundID="6" SoundName="牛四" SoundPath="Sound/sound_brnn_type_04.mp3" SoundTime="2" />
+	<Data SoundID="7" SoundName="牛五" SoundPath="Sound/sound_brnn_type_05.mp3" SoundTime="2" />
+	<Data SoundID="8" SoundName="牛六" SoundPath="Sound/sound_brnn_type_06.mp3" SoundTime="2" />
+	<Data SoundID="9" SoundName="牛七" SoundPath="Sound/sound_brnn_type_07.mp3" SoundTime="2" />
+	<Data SoundID="10" SoundName="牛八" SoundPath="Sound/sound_brnn_type_08.mp3" SoundTime="2" />
+	<Data SoundID="11" SoundName="牛九" SoundPath="Sound/sound_brnn_type_09.mp3" SoundTime="2" />
+	<Data SoundID="12" SoundName="牛牛" SoundPath="Sound/sound_brnn_type_10.mp3" SoundTime="2" />
+	<Data SoundID="13" SoundName="银牛" SoundPath="Sound/sound_brnn_type_11.mp3" SoundTime="1" />
+	<Data SoundID="14" SoundName="四炸" SoundPath="Sound/sound_brnn_type_12.mp3" SoundTime="2" />
+	<Data SoundID="15" SoundName="五花牛" SoundPath="Sound/sound_brnn_type_13.mp3" SoundTime="2" />
+	<Data SoundID="16" SoundName="五小牛" SoundPath="Sound/sound_brnn_type_14.mp3" SoundTime="2" />
+	<Data SoundID="17" SoundName="倒计时音效" SoundPath="Sound/count_down.mp3" SoundTime="1" />
+	<Data SoundID="18" SoundName="倒计时3" SoundPath="Sound/countdown_3.mp3" SoundTime="1" />
+	<Data SoundID="19" SoundName="倒计时2" SoundPath="Sound/countdown_2.mp3" SoundTime="1" />
+	<Data SoundID="20" SoundName="倒计时1" SoundPath="Sound/countdown_1.mp3" SoundTime="1" />
+	<Data SoundID="21" SoundName="倒计时0开牌" SoundPath="Sound/countdown_open.mp3" SoundTime="1" />
+	<Data SoundID="22" SoundName="发牌音效" SoundPath="Sound/sound-fapai.mp3" SoundTime="1" />
+	<Data SoundID="23" SoundName="翻牌音效" SoundPath="Sound/sound-fanpai.mp3" SoundTime="1" />
+	<Data SoundID="24" SoundName="开始下注" SoundPath="Sound/sound-start-wager.mp3" SoundTime="2" />
+	<Data SoundID="25" SoundName="庄家轮换" SoundPath="Sound/zhuang-2.mp3" SoundTime="2" />
+	<Data SoundID="26" SoundName="筹码飞入音效" SoundPath="Sound/sound-jetton.mp3" SoundTime="1" />
+	<Data SoundID="27" SoundName="结算获胜音乐" SoundPath="Sound/sound-result-win.mp3" SoundTime="5" />
+	<Data SoundID="28" SoundName="赢钱音效1" SoundPath="Sound/girl_win_0.mp3" SoundTime="2" />
+	<Data SoundID="29" SoundName="赢钱音效2" SoundPath="Sound/girl_win_1.mp3" SoundTime="3" />
+	<Data SoundID="30" SoundName="赢钱音效3" SoundPath="Sound/girl_win_2.mp3" SoundTime="3" />
+	<Data SoundID="31" SoundName="结算失败音乐" SoundPath="Sound/lose-sound.mp3" SoundTime="2" />
+	<Data SoundID="32" SoundName="输钱音效1" SoundPath="Sound/girl_lost_1.mp3" SoundTime="3" />
+	<Data SoundID="33" SoundName="输钱音效2" SoundPath="Sound/girl_lost_2.mp3" SoundTime="3" />
+	<Data SoundID="34" SoundName="输钱音效3" SoundPath="Sound/girl_lost_3.mp3" SoundTime="3" />
+	<Data SoundID="35" SoundName="结算获胜音乐" SoundPath="Sound/sound-result-win.mp3" SoundTime="5" />
+	<Data SoundID="36" SoundName="赢钱音效1" SoundPath="Sound/girl_win_0.mp3" SoundTime="2" />
+	<Data SoundID="37" SoundName="赢钱音效2" SoundPath="Sound/girl_win_1.mp3" SoundTime="3" />
+	<Data SoundID="38" SoundName="赢钱音效3" SoundPath="Sound/girl_win_2.mp3" SoundTime="3" />
+	<Data SoundID="39" SoundName="结算失败音乐" SoundPath="Sound/lose-sound.mp3" SoundTime="2" />
+	<Data SoundID="40" SoundName="输钱音效1" SoundPath="Sound/girl_lost_1.mp3" SoundTime="3" />
+	<Data SoundID="41" SoundName="输钱音效2" SoundPath="Sound/girl_lost_2.mp3" SoundTime="3" />
+	<Data SoundID="42" SoundName="输钱音效3" SoundPath="Sound/girl_lost_3.mp3" SoundTime="3" />
+</Root>

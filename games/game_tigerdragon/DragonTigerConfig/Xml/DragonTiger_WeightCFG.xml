@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Root>
+	<Data Index="1" Water="0.7" KillScoreRate="100" TriggerControl="1" />
+	<Data Index="2" Water="0.8" KillScoreRate="82" TriggerControl="1" />
+	<Data Index="3" Water="0.9" KillScoreRate="83" TriggerControl="1" />
+	<Data Index="4" Water="1.1" KillScoreRate="84" TriggerControl="1" />
+	<Data Index="5" Water="1.2" KillScoreRate="85" TriggerControl="0" />
+	<Data Index="6" Water="1.3" KillScoreRate="100" TriggerControl="1" />
+</Root>

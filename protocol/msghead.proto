@@ -1,0 +1,113 @@
+syntax = "proto2";
+//import "msgtype.proto";
+package msghead;
+
+enum emsgType{
+    e_g2log_disconn= 1;	   	    //@用户断网;
+    e_c2l_heartbeat = 8;		//@心跳包
+    e_w2check_svr_reg =301;		  //@world向check注册服务;
+    e_check2w_svr_reg_res=302;		  //@回复一个;
+
+    e_w2check_svr_unreg=303;		 //@房间注册;
+    e_check2w_svr_unreg_res=304;		 //@房间反注册;
+	    
+    e_w2check_acc_chk =501;          	    //@world向check服务器检测token
+    e_w2check_acc_chk_res =502;    	    //@检测返回;
+  
+    e_w2check_get_pid =503;		    //@world请求playerID
+    e_check2w_get_pid_res=504;		    //@check请求playerID 回复;	
+
+    e_login2chk_acc_chk = 1001;     //@login service 发送账号请求;
+    e_chk2login_acc_chk_res=1002;   //@check service 账号检测返回;
+    
+    e_clt2login_login = 1003;	    //@用户登录报文;	
+    e_login2clt_login_ret =1004;    //@登录返回;
+
+    e_clt2login_user_reg =1005;	    //@用户注册;
+    e_login2clt_user_reg_ret= 1006;  //@用户注册报文返回; 
+ 	
+    e_clt2login_req_SMS =1007;	    //@客户端请求短信;
+    e_login2clt_req_SMS_ret = 1008; //@请求短信报文返回,只标识是否调用了请求接口;
+    
+    e_login2websvr_req_SMS= 1107;   //@包体复用,包头换一个;
+    e_websvr2login_req_SMS_ret =1108;	
+     
+	
+    e_clt2login_acc_binding = 1009; //@请求绑定账号;
+    e_login2clt_acc_binding_ret =1010 ; //@请求绑定账号结果;
+
+    e_clt2login_alipay_binding = 1011; //请求绑定支付宝;
+    e_login2clt_alipay_binding_ret =1012; //@请求绑定支付宝返回;
+
+    e_clt2login_retrieve_pwd = 1013;   //@找回密码;
+    e_login2clt_retrieve_pwd_ret = 1014; //@找回密码返回;	 	 		
+
+    e_w2chk_req_robotPID =1015;  	//@获取机器人ID
+    e_chk2w_req_robotPID_ret =1016; 	//@获取机器人ID回报;
+    
+    e_chk2w_pub_phone_binding = 1017;	 //@通知绑定手机成功给绑定奖励;
+	
+    e_clt2login_req_token = 1019;	 //@客户端请求token;
+    e_login2clt_req_token_ret = 1020;  //@请求token返回;
+	
+    e_clt2login_reqReCharge = 1021;	//@客户端请求充值;
+    e_login2clt_reqRecharge_ret = 1022;  //@客户端请求充值结果;
+
+    e_login2chk_reqOrderID = 1023;    //@登录服务向check请求订单,并入库订单信息;
+    e_chk2login_reqOrderID_ret = 1024;  //@check服务向loginsvr返回请求充值订单结果;
+
+    e_login2web_reqrecharge = 1025;   //@向login向 websvr发送请求充值详情;
+    e_web2login_reqrechareg_ret=1026;  //@web返回充值详情;
+    
+    e_chk2login_pub_kick_user = 1039;  //@check服务向登录服务广播;
+    e_w2chk_up_userstat = 1500;     //@word 服务器向check发送更新用户状态报文;
+    e_chk2w_up_userstat = 1501;     //@check 服务向world 发送更新用户状态返回报文;
+   
+    e_recharge2chk_cb = 1600;	   //@check 服务接到 充值成功回调;
+    e_chk2recharge_cb_ret=1601;	   //@回复充值成功结果;
+    e_ckk2world_pub_recharge_ret=1602; //@充值成功,通知world加钱;
+
+    e_w2chk_get_unChecked_list = 1603; //@统一为订单确认消息,多个world会收到通告消息,不能区分如何确认;
+    e_chk2w_get_unChecked_list_ret=1604; //@礼貌性回复;
+   
+    e_w2chk_cancle_check_order =1605;  //@取消确认订单消息;
+    e_chk2w_cancle_check_order_ret =1606; //@取消订单确认回复;
+
+    e_w2chk_exchange_order = 1607;  //@接收world过来的下分订单请插入请求;
+    e_chk2w_exchange_order_ret= 1608;	//@返回插入结果;
+    
+    e_chk2login_pub_roomlist = 1700;   //@推送房间列表消息;
+    e_error_begin = 7999;	   //@错误开始;
+    e_error_accorpwd = 8000;	   //@用户名或密码错误;
+    e_error_noacc   = 8001;	   //@账号不存在;
+    e_error_accpwd_illegal = 8002;  //@账号或密码长度非法;
+    e_error_accbinding_ret1=8003; //@游客账号不存在;
+    e_error_accbinding_ret2 =8004; //@手机号已经被绑定;
+    e_error_accbinding_ret3 =8005; //@账号不存在或已被绑定;
+    e_error_alibinding_ret1 = 8006; //@用户信息不存在;
+    e_error_alibinding_ret2 = 8007; //@游客账号不能绑定支付宝;
+    e_error_retrieve_pwd_ret1 =8008; //@重置密码是发生错误,联系客服解决;
+    e_error_login_ret1=8009;  //@生成账号错误,账号已存在;
+    e_error_login_ret2=8010;  //@数据解析出错;
+    e_error_login_ret3=8011;  //@登录数据解析出错;一般不应该出;
+    e_error_login_ret4 = 8012; //@状态信息出错;
+    e_error_login_ret5 = 8013; //@重复登录;
+    e_error_login_ret6 = 8014; //@用户名或密码错误;
+    e_error_login_ret7 = 8015; //@token生成错误;
+    e_error_login_ret8 = 8016; //@此IP注册数量超过最大值;
+		
+    e_error_to_clt = 9000;	    //@发生错误通知客户端;						 	
+    e_error_clt_dis = 9001;	    //@网关上用户连接关闭
+    e_logic2logsvr_gameLog = 10000;  //@游戏房间写日志;
+}
+//@服务器间路由包头;
+message MsgHead{
+     required int32 	msgSize = 1;
+     required emsgType  msgID = 2;	  //@标识消息类型 ，如果是0，表示发生错误，错误描述在content中出现;此种情况只发生在返回报文的情况
+     optional string 	sessionID = 3;	 //@对应网关连接ID;
+     optional string 	repIdentity = 4;  //@ 标识回应服务器Identity;
+     optional int32   	closeClientSession =5; //@是否关闭客户端连接,0不关闭,1,关闭并且清理用户登录状态,2,关闭但不清理用户状态;		
+     optional int32  	cltAddr =6;	  //@ip地址;
+     optional bytes 	content = 7;	//@payload;	
+}
+

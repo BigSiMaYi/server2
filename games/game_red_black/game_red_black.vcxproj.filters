@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="logic_main.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_other.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_poker_mgr.cpp">
+      <Filter>logic</Filter>
+    </ClCompile>
+    <ClCompile Include="game_db.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="game_db_log.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="RedBlack_BaseInfo.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="RedBlack_Cardodds.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="RedBlack_RobotCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="RedBlack_RoomCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="RedBlack_RoomStockCFG.cpp">
+      <Filter>config</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_red_black_logic.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="proc_red_black_protocol.cpp">
+      <Filter>proc</Filter>
+    </ClCompile>
+    <ClCompile Include="game_red_black.cpp">
+      <Filter>engine</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_room.cpp">
+      <Filter>mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_lobby.cpp">
+      <Filter>mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_robot.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="logic_player.cpp">
+      <Filter>player</Filter>
+    </ClCompile>
+    <ClCompile Include="game_engine.cpp">
+      <Filter>mgr</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\msg_info_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\msg_type_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\red_black_def.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\red_black_logic.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\red_black_protocol.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\share2\protocol\logic2logsvr_msg_type.pb.cc">
+      <Filter>protocol</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="logic_def.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_main.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_other.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_poker_mgr.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="cards_def.h">
+      <Filter>logic</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="game_db_log.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlack_BaseInfo.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlack_Cardodds.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlack_RobotCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlack_RoomCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="RedBlack_RoomStockCFG.h">
+      <Filter>config</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_red_black_logic.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="proc_red_black_protocol.h">
+      <Filter>proc</Filter>
+    </ClInclude>
+    <ClInclude Include="game_red_black.h">
+      <Filter>engine</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_room.h">
+      <Filter>mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_lobby.h">
+      <Filter>mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_robot.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="logic_player.h">
+      <Filter>player</Filter>
+    </ClInclude>
+    <ClInclude Include="game_engine.h">
+      <Filter>mgr</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\msg_info_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\msg_type_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\red_black_def.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\red_black_logic.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\red_black_protocol.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\share2\protocol\logic2logsvr_msg_type.pb.h">
+      <Filter>protocol</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="config">
+      <UniqueIdentifier>{027976da-ef31-421d-a42e-7ac674f9b696}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="proc">
+      <UniqueIdentifier>{b961daee-afc7-466a-8ede-37f2d4fab320}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="protocol">
+      <UniqueIdentifier>{d3b158bb-e479-47e7-8611-571a2017f3da}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="logic">
+      <UniqueIdentifier>{0111f97b-f2c9-4659-9931-84a9dc28333f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="engine">
+      <UniqueIdentifier>{5d1ed7a2-4866-4842-93cd-3ad360dd3355}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mgr">
+      <UniqueIdentifier>{1a31a1d4-e2d2-48c9-8e9b-d13c82ff60cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="player">
+      <UniqueIdentifier>{14df1891-fae1-4aca-ae1e-d088b7268885}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\..\share2\protocol\msg_info_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\msg_type_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\red_black_def.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\red_black_logic.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\red_black_protocol.proto">
+      <Filter>protocol</Filter>
+    </None>
+    <None Include="..\..\..\share2\protocol\logic2logsvr_msg_type.proto">
+      <Filter>protocol</Filter>
+    </None>
+  </ItemGroup>
+</Project>
